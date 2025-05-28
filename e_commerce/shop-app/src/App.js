@@ -1,11 +1,11 @@
 import './App.css';
-import Navigations from "./customer/components/Navigations/Navigations";
+import Navigation from "./customer/components/Navigations/Navigation";
 
 function App() {
     return (
-        <div className="">
-            <Navigations />
-            <div>home</div>
+        <div className="bg-white text-black min-h-screen">
+            <Navigation />
+            <div className="text-center text-2xl mt-10">home</div>
         </div>
     );
 }

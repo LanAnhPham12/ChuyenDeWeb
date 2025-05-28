@@ -1,3 +1,5 @@
+'use client'
+
 import { Fragment, useState } from 'react'
 import {
     Dialog,
@@ -139,7 +141,7 @@ const navigation = {
     ],
 }
 
-export default function Navigations() {
+export default function Navigation() {
     const [open, setOpen] = useState(false)
 
     return (
