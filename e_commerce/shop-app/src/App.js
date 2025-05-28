@@ -1,11 +1,14 @@
 import './App.css';
 import Navigation from "./customer/components/Navigations/Navigation";
+import HomePage from "./customer/pages/HomePage/HomePage";
 
 function App() {
     return (
-        <div className="bg-white text-black min-h-screen">
+        <div className=" ">
             <Navigation />
-            <div className="text-center text-2xl mt-10">home</div>
+        <div>
+            <HomePage/>
+        </div>
         </div>
     );
 }
