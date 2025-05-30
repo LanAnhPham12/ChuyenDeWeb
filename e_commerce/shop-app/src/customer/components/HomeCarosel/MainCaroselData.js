@@ -1,6 +1,23 @@
+import React from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import { Link } from 'react-router-dom';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 export const MainCaroselData = [
     {
-        image:"",
-        path:""
+        image: "https://www.ethnicplus.in/media/mageplaza/bannerslider/banner/image/1/0/10_5.jpg",
+        path: "/women/clothing/lengha_choli"
+    },
+    {
+        image: "https://www.ethnicplus.in/media/mageplaza/bannerslider/banner/image/1/2/12_4.jpg",
+        path: "/women/clothing/women_dress"
+    },
+    {
+        image: "https://www.ethnicplus.in/media/mageplaza/bannerslider/banner/image/9/_/9_8.jpg",
+        path: "/women/clothing/women_dress"
+    },
+    {
+        image: "https://www.ethnicplus.in/media/mageplaza/bannerslider/banner/image/1/1/11_4.jpg",
+        path: "/women/clothing/women_saree"
     }
-]
+];
