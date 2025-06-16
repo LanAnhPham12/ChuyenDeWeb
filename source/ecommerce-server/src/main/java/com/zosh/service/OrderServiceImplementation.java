@@ -22,7 +22,7 @@ import com.zosh.repository.OrderItemRepository;
 import com.zosh.repository.OrderRepository;
 import com.zosh.repository.UserRepository;
 import com.zosh.user.domain.OrderStatus;
-import com.zosh.user.domain.PaymentStatus;
+
 
 @Service
 public class OrderServiceImplementation implements OrderService {
@@ -84,7 +84,6 @@ public class OrderServiceImplementation implements OrderService {
 		createdOrder.setShippingAddress(address);
 		createdOrder.setOrderDate(LocalDate.now());
 		createdOrder.setOrderStatus(OrderStatus.PENDING);
-		createdOrder.getPaymentDetails().setStatus(PaymentStatus.PENDING);
 		createdOrder.setCreatedAt(LocalDateTime.now());
 		
 		Order savedOrder=orderRepository.save(createdOrder);
@@ -102,7 +101,6 @@ public class OrderServiceImplementation implements OrderService {
 	public Order placedOrder(Long orderId) throws OrderException {
 		Order order=findOrderById(orderId);
 		order.setOrderStatus(OrderStatus.PLACED);
-		order.getPaymentDetails().setStatus(PaymentStatus.COMPLETED);
 		return order;
 	}
 
